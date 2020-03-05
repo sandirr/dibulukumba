@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.bulukumba {
+    font-size: 21px;
+}
+
+nav li a {
+    color: black;
+    font-weight: bold;
+}
+
+.slider h3,
+.slider h5 {
+    text-shadow: 3px 3px 3px black;
+}
+
+.samping {
+    background: white;
+    border-right: 1px solid #c3c3c3;
+    position: fixed;
+    /* height: 100%; */
+    bottom: 0%;
+    float: left;
+    top: 55px;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.togel {
+    width: 55px;
+}
+
+.melebar {
+    width: 250px;
+}
+
+.togel:hover {
+    transition: .5s;
+    width: 250px;
+}
+
+.collection-item {
+    border-radius: 0 20px 20px 0 !important;
+}
+
+.collection .collection-item {
+    border-bottom: none;
+}
+
+section {
+    padding: 20px 0;
+}
+
+.card .card-action a {
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.konten-b .card {
+    border-radius: 12px;
+}
+
+.konten-b .card img {
+    border-radius: 12px 12px 0 0;
+}
+
+.login-icon {
+    transform: rotate(180deg);
+}
+
+section.detail {
+    text-align: justify;
+}
+
+section.detail img {
+    width: 80%;
+    margin: 14px 10%;
+}
+
+.panduan blockquote {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    padding: 12px
+}
+
+.tambahdata button {
+    padding: 12px;
+}
+
+.fix {
+    width: 22%;
+}
+
+.etiket .card-panel {
+    border-radius: 25px 0;
+}
+
+.detail-responsive{
+        display:none;
+}
+
+.detail-responsive .collection,
+.fix .collection {
+    border-radius: 12px;
+    border-right: 4px dashed #448aff;
+}
+
+/* overlay tiket pesawat */
+.fix-toh,
+.fix-toh1 {
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    position: fixed;
+    background: rgba(0, 0, 0, .8);
+    z-index: 9999;
+    transition: 1s;
+}
+
+.fix-toh .t-pesawat,
+.fix-toh1 .t-nginap {
+    position: relative;
+    height: 350px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.fix-toh:target,
+.fix-toh1:target {
+    width: auto;
+    height: auto;
+    bottom: 0%;
+    right: 0%;
+}
+
+.fix-toh:target h4,
+.fix-toh1:target h4 {
+    margin-top: 50px;
+    animation: zoomDanFade .5s;
+}
+
+.fix-toh .ket1,
+.fix-toh1 .ket1 {
+    margin-top: -20px;
+    padding: 7px;
+    border-radius: 10px 10px 0 0;
+}
+
+.fix-toh:target .t-pesawat,
+.fix-toh1:target .t-nginap {
+    animation: zoomDanFade 1s;
+}
+
+.fix-toh .close,
+.fix-toh1 .close {
+    position: absolute;
+    bottom: 0%;
+    left: 42%;
+    text-align: center;
+}
+
+.fix-toh .close:hover,
+.fix-toh1 .close:hover {
+    background-color: white !important;
+    color: black;
+}
+
+@keyframes zoomDanFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .detail-responsive{
+        display:block;
+    }
+    .fixed-action-btn {
+        display: none;
+    }
+
+    .fix-toh .t-pesawat,
+    .fix-toh1 .t-nginap {
+        height: 500px;
+
+    }
+
+    .fix-toh:target h4,
+    .fix-toh1:target h4 {
+        margin-top: 25px;
+    }
+    
+    .fix {
+    display:none;
+}
+    
+    
+    
+    
+
+}
